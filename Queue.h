@@ -24,13 +24,12 @@ if(new_node){
     */
    if(!headPtr){
     headPtr = tailPtr = new_node;
-    size++;
    }
    else{
     tailPtr->set_next(new_node);
     tailPtr = new_node;
-    size++;
    }
+   size++;
  }
 }
 
@@ -63,7 +62,7 @@ Queue::Queue(){
 Queue::~Queue(){
     //delete all remaning Queue (i.e. DQ all) 
     //cout << "Dequeing " << headPtr->get_value();
-    //cout << "Clear the system...\n";
+    cout << "Clearing queue" << endl;
     while (headPtr!=NULL){
       dequeue();
     }

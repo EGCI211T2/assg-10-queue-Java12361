@@ -1,4 +1,4 @@
-argument: main.cpp
+make: main.cpp
 	g++ main.cpp -o Q
 run: Q
 	./Q
